@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="data:," />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +35,16 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
+          <button
+            class="menu-nav-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            data-menu-open
+          >
+            <svg class="menu-nav-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link current" href="./index.html">Studio</a>
@@ -45,6 +57,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="header-address">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -63,7 +76,7 @@
     </header>
 
     <main>
-      <section class="hero" id="hero">
+      <section class="hero hide" id="hero">
         <div class="hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
@@ -72,7 +85,7 @@
         </div>
       </section>
 
-      <section class="benefits section-size" id="benefits">
+      <section class="benefits section-size hide" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -135,7 +148,7 @@
         </div>
       </section>
 
-      <section class="team section-size">
+      <section class="team section-size hide">
         <div class="container">
           <h2 class="section-title" id="team">Our Team</h2>
           <ul class="team-list">
@@ -419,7 +432,7 @@
         </div>
       </section>
 
-      <section class="portfolio section-size">
+      <section class="portfolio section-size hide">
         <div class="container">
           <h2 class="section-title" id="portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -549,7 +562,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container footer-container">
         <div class="footer-content">
           <a href="./index.html" class="logo footer-logo"
@@ -747,6 +760,97 @@
 
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-container container">
+        <button class="mobile-menu-btn" type="button" data-menu-close>
+          <svg class="mobile-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link current" href="./index.html">Studio</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">Portfolio</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="menu-address">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-soc-list">
+          <li class="menu-soc-item">
+            <a
+              class="menu-soc-link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-soc-item">
+            <a
+              class="menu-soc-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-soc-item">
+            <a
+              class="menu-soc-link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-soc-item">
+            <a
+              class="menu-soc-link"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
